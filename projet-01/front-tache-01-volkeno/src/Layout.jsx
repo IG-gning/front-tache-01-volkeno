@@ -27,12 +27,12 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <div className="d-flex" style={{ minHeight: "100vh" }}>
+    <div className="d-flex" style={{ minHeight: "100vh", }}>
       
       {/* SIDEBAR */}
       <div  
            className="bg-dark d-flex flex-column">
-        <Sidebar show={showSidebar} />
+        <Sidebar show={showSidebar} closeSidebar={() => setShowSidebar(false)} />
       </div>
 
       {/* ZONE DROITE */}
